@@ -25,5 +25,7 @@ jobs:
       run: npm start &
     - name: Start backend
       run: node server/server.js &
+    - name: Get Test dependencies
+      run:  npx playwright install
     - name: Run UI tests
       run: npm run test-ui
