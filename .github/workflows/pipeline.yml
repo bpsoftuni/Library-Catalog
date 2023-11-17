@@ -24,6 +24,6 @@ jobs:
     - name: Start frontend
       run: npm start &
     - name: Start backend
-      run: server/server.js &
+      run: node server/server.js &
     - name: Run UI tests
-      run: npm run tests-ui
+      run: npm run test-ui
